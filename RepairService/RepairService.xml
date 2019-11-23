@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RepairService</name>
+    </assembly>
+    <members>
+        <member name="M:RepairService.Controllers.AuthController.Token">
+            <summary>
+            Return JWT barrier token to authenticate users
+            </summary>
+            <response code="200">return JWT token</response>
+            <response code="400">If user wasnt found</response>    
+        </member>
+        <member name="M:RepairService.Controllers.AuthController.Register">
+            <summary>
+            Register new user
+            </summary>
+            <response code="200">user was successfully created</response>
+            <response code="400">user with the same login have already been created</response>  
+        </member>
+        <member name="M:RepairService.Controllers.FlatSettingsController.CreateRepairSetting(RepairService.Models.FlatModel)">
+            <summary>
+            Create a new repair for selected flat items
+            </summary>
+            <response code="200">Id of created repair setting and repair cost</response>
+            <response code="400">If user wasnt found</response>    
+        </member>
+        <member name="M:RepairService.Controllers.FlatSettingsController.getUserCreatedRepairs(System.String)">
+            <summary>
+            Returns list of repair settings that have been created by selected user
+            </summary>
+            <response code="200">list for selected user</response>
+            <response code="400">If user wasnt found</response>   
+            <param name="userLogin">Login of selected user</param>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetWallOptions">
+            <summary>
+            Returns Wall actions in room configurator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetFloorOptions">
+            <summary>
+            Returns Floor actions in room configurator
+            </summary>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetDoorOptions">
+            <summary>
+            Returns avaliable doors in room configurator
+            </summary>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetBaseboardOptions">
+            <summary>
+            Returns avaliable baseboards in room configurator
+            </summary>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetPowerSocketsOptions">
+            <summary>
+            Returns avaliable powersockets and in room configurator
+            </summary>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetKitchenOptions">
+            <summary>
+            Returns avaliable kitchen variants
+            </summary>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetBathroomOptions">
+            <summary>
+            Returns avaliable bathroom variants
+            </summary>
+        </member>
+        <member name="M:RepairService.Controllers.SettingsController.GetAdditionalOptions">
+            <summary>
+            Returns avaliable additional options
+            </summary>
+        </member>
+        <member name="M:RepairService.Models.FormContentElement.#ctor">
+            <summary>
+            Represents controller actions that accept a form content type loading
+            </summary>
+        </member>
+        <member name="P:RepairService.Models.FormContentElement.Format">
+            <summary>
+            Gets or sets the payload format.
+            </summary>
+        </member>
+        <member name="P:RepairService.Models.FormContentElement.Required">
+            <summary>
+            Gets or sets a required flag.
+            </summary>
+        </member>
+        <member name="P:RepairService.Models.FormContentElement.Description">
+            <summary>
+            Gets or sets value`s description
+            </summary>
+        </member>
+        <member name="P:RepairService.Models.FormContentElement.ParameterName">
+            <summary>
+            Gets or sets a parameter name.
+            </summary>
+        </member>
+    </members>
+</doc>
