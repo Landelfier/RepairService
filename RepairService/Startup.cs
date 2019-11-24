@@ -82,7 +82,7 @@ namespace RepairService
 
             services.AddDbContext<Context>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("RepairDatabase"));
+                options.UseSqlServer(Configuration.GetConnectionString("DockerDB"));
                 options.UseLazyLoadingProxies();
                 options.UseLoggerFactory(LoggerFactory.Create(configure => configure.AddConsole()));
             });
